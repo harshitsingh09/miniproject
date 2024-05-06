@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <h2>Uploaded Files</h2>
+    <p>CSV File: {{ csv_filename }}</p>
+    <p>Image File: {{ image_filename }}</p>
+    <h2>Generated Images</h2>
+    <p>Heatmap:</p>
+    <img src="{{ url_for('static', filename=heatmap_filename) }}" alt="Heatmap">
+    <p>Choropleth Map:</p>
+    <img src="{{ url_for('static', filename=choropleth_filename) }}" alt="Choropleth
